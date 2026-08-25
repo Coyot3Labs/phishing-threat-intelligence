@@ -1,0 +1,20 @@
+# Case #001 - Allegro Lokalnie Phishing
+# Indicators of Compromise (Defanged)
+
+[Domain]
+pl-oferta783694[.]biz
+
+[Phishing Hostname]
+allegrolokalnie[.]pl-oferta783694[.]biz
+
+[Observed Cloudflare IPs]
+104[.]21[.]66[.]103
+172[.]67[.]159[.]9
+
+[Nameservers]
+cosmin[.]ns[.]cloudflare[.]com
+kiki[.]ns[.]cloudflare[.]com
+
+# Note:
+# Cloudflare IP addresses and nameservers are shared infrastructure.
+# They should not be treated independently as malicious indicators.
