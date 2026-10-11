@@ -1,0 +1,16 @@
+type,indicator,confidence,role,first_seen,last_seen,notes
+domain,www-paribu[.]jamnagartransportco[.]com,high,Paribu phishing hostname,2026-09-28,2026-10-02,NXDOMAIN during later checks
+ipv4,192[.]227[.]177[.]140,high,Observed phishing host address,2026-10-01,2026-10-01,Shared hosting risk; apply time bounds
+domain,webc[.]rankpilotlab[.]com,high,Multi-brand phishing-kit service,2026-09-15,2026-10-09,Served LBank and OrangeX workflows and Paribu-specific assets
+domain,rankpilotlab[.]com,high,Phishing-kit parent domain,2026-09-02,2026-10-09,Do not substitute Cloudflare edge addresses as actor infrastructure
+domain,jamnagartransportco[.]com,medium,Parent domain of phishing hostname,2026-10-01,2026-10-01,Possible compromise or unauthorized subdomain; do not block apex solely from this report
+ipv4,23[.]94[.]207[.]111,medium,Related OrangeX landing-page address,2026-09-15,2026-09-20,Contextual campaign indicator
+ipv4,23[.]94[.]207[.]122,medium,Related LBank landing-page address,2026-10-09,2026-10-09,Contextual campaign indicator
+domain,www-orangex[.]bulfox[.]com,medium,Related OrangeX impersonation,2026-09-15,2026-09-20,Same central kit infrastructure
+domain,www-lbank-login[.]hamsasoft[.]website,medium,Related LBank impersonation,2026-10-09,2026-10-09,Same central kit infrastructure
+domain,lbank-login[.]vinbizz[.]in,medium,Related LBank impersonation,2026-10-09,2026-10-09,Same central kit infrastructure
+sha256,770ee61965b261fe57e78a2668621baaa00662c38bb24bc778974180dd1b95ba,high,Paribu phishing landing-page response,2026-10-01,2026-10-01,Observed once in urlscan.io
+sha256,fdb502cb031e3a3d0889af0d34948a77048dabf6f3510b6f807dc4ce171e5722,high,Paribu login-document response,2026-10-01,2026-10-01,Body unavailable in exported evidence
+sha256,f5f77b36855b5023eb934ea8baa2d4f5a4e2969d7eb05c7a3bdba502cef5ef77,high,ParibuLoginPage stylesheet in central kit,2026-10-09,2026-10-09,Observed in two LBank phishing scans
+sha256,f2f1c7c5d38abd13f922ee3ad957caae396766ac3f936b13d56bf76a0884f0b1,high,ParibuRedirectToLogin stylesheet in central kit,2026-10-09,2026-10-09,Observed in two LBank phishing scans
+sha256,468f3e864d44eba29446f78ed1012edef58a297be9a6760cb0d0e1afebc52a9a,high,TLS certificate fingerprint,2026-09-28,2026-10-01,Certificate for phishing hostname
