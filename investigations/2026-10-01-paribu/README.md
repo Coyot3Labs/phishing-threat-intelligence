@@ -8,6 +8,10 @@
 **Status:** Confirmed phishing  
 **Confidence:** High
 
+- [Evidence index — 26 screenshots](evidence/INDEX.md)
+- [Evidence review and exclusions](evidence/REVIEW_LOG.md)
+- [Screenshot checksums](SHA256SUMS.txt)
+
 ## 1. Executive Summary
 
 A phishing page impersonating the Turkish cryptocurrency platform Paribu was observed at:
@@ -51,6 +55,10 @@ Both paths returned the same HTML object:
 
 The login response body was not available in the exported scan data. No credentials were entered during the investigation.
 
+![Paribu-branded phishing landing page captured by urlscan.io](evidence/screenshots/02_urlscan_screenshot.png)
+
+*Figure 1 — Paribu-branded landing page rendered in the isolated urlscan.io capture.*
+
 ## 3. Content Comparison
 
 The suspicious page loaded 55 hashed resources. Comparison with a contemporary scan of the legitimate Paribu website identified 35 exact SHA-256 matches.
@@ -75,6 +83,10 @@ The exported urlscan.io data recorded:
 | WebSocket connections | 0 |
 | Domains contacted over HTTP | 1 |
 | IP addresses contacted | 1 |
+
+![HTTP transaction list from the urlscan.io capture](evidence/screenshots/03_urlscan_http.png)
+
+*Figure 2 — Captured HTTP transactions. The observed session contained GET requests only.*
 
 The browser prefetched both login paths but did not navigate into the login workflow. The absence of a POST request only describes the captured session; it does not demonstrate that the login workflow lacked credential collection.
 
@@ -101,7 +113,15 @@ The main document response hash was:
 | Certificate valid until | December 27, 2026 |
 | Certificate SHA-256 | `468f3e864d44eba29446f78ed1012edef58a297be9a6760cb0d0e1afebc52a9a` |
 
+![Historical DNS answer for the phishing hostname](evidence/screenshots/08_kali_dig.png)
+
+*Figure 3 — Historical DNS observation linking the phishing hostname to `192[.]227[.]177[.]140`.*
+
 The phishing certificate became valid approximately three days before the urlscan.io observation.
+
+![Certificate details for the phishing hostname](evidence/screenshots/22_urlscan_paribu_certificate.png)
+
+*Figure 4 — TLS certificate subject and validity window shown by urlscan.io.*
 
 The hostname currently returns NXDOMAIN. The parent domain continues to resolve through Cloudflare.
 
@@ -152,6 +172,10 @@ India's Ministry of Corporate Affairs records Jamnagar Transport Company Private
 
 The company's existence does not establish control of the phishing hostname. No evidence indicates that the company participated in the campaign or had a legitimate relationship with Paribu.
 
+![Parent-domain website associated with the transport company](evidence/screenshots/25_jamnagar_official_website.png)
+
+*Figure 5 — Parent-domain content used for the company-identity comparison.*
+
 A WHOIS screenshot for `jtcltd[.]com` was excluded from attribution because it concerns a different domain.
 
 ## 8. Timeline
@@ -166,6 +190,10 @@ A WHOIS screenshot for `jtcltd[.]com` was excluded from attribution because it c
 | October 5–11, 2026 | Phishing hostname returns NXDOMAIN |
 
 The close timing of the kit certificate, cloned files, and phishing certificate supports coordinated deployment.
+
+![NXDOMAIN response for the phishing hostname](evidence/screenshots/16_kali_dns_nxdomain.png)
+
+*Figure 6 — Later DNS check showing that the phishing hostname no longer resolved.*
 
 ## 9. Confidence Assessment
 
@@ -202,7 +230,7 @@ AS36352, Cloudflare infrastructure, and the parent domain should not be blocked 
 | Exported urlscan.io JSON | `C5A3D3738162F7BB736011B64641B852828062E87FB7E5705A562D8E4CA3E2D8` |
 | Captured landing-page HTML | `ABE539D1AEA9429C078137D3AF7FE06945144ABAAB96D6C5F4DC5747C8D8F5B9` |
 
-The original evidence archive is not included in this repository. Hashes are provided to preserve traceability.
+Selected, reviewed screenshot copies are available in [the evidence index](evidence/INDEX.md). The complete original archive remains local. Screenshot checksums identify the byte-for-byte publication copies.
 
 ## 12. Sources and Tools
 
@@ -219,3 +247,5 @@ The original evidence archive is not included in this repository. Hashes are pro
 ## Disclaimer
 
 This investigation was conducted for defensive cybersecurity research and threat-intelligence purposes. The phishing site was not accessed through a personal browser, and no credentials or personal information were submitted.
+
+Domains, URLs, and IP addresses in the written analysis are defanged. Screenshots preserve the original captured interface and may display active-looking indicators; do not visit them directly.
