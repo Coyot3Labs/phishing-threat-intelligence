@@ -1,0 +1,7 @@
+type,value_defanged,role,confidence,evidence_ids,suggested_use_en,limitation_en
+domain,ehazinesorgula[.]com,observed_phishing,high,E01 E03 E05 E10,Search historical DNS/proxy logs; consider for organizational blocking assessment.,Live status on 24 October 2026 was not verified.
+url,hxxps[://]ehazinesorgula[.]com/giris,fake_login,high,E05 E06 E07 E09,Search historical web access logs using both path and domain.,Path contains no secrets/PII; observation is historical.
+url,hxxps[://]ehazinesorgula[.]com/api/proxy_query.php,same_site_credential_post,high,E08 E10,Hunt using the domain together with the POST method.,E10 screenshot evidence; this POST is absent from the HAR.
+domain,turkeysystems[.]org,configured_external_api,high_for_relationship,E11 E14,Contextual investigation; do not classify the domain as malicious on this relationship alone.,Successful identity lookup or external password transfer was not verified.
+url,hxxps[://]turkeysystems[.]org/tc-api,configured_query_endpoint,high_for_relationship,E11 E14,Contextual investigation; do not collect or publish query values.,Query secrets removed; the E14 response is an application error.
+sha256,4bd72a1646f398124fd9be11437a6b85719e422bbfab63bff6a4239f3ba7bdc7,client_api_component,high_for_byte_identity,E08 E09 E30 E32 E34,Search collected scripts for an exact hash match.,Not the entire kit or an operator identity; candidate-domain provenance is incomplete.

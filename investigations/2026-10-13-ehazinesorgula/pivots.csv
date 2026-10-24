@@ -1,0 +1,6 @@
+domain_defanged,status,evidence_ids,basis_en,limitation_en
+dosyakontrol[.]net,candidate_shared_component,E28 E29 E30 E31 E35,Screenshot of a resource path returning GET 200 and a local copy with the same hash.,Independent acquisition of the E30 response from this domain is not fully documented.
+maliyehazine[.]com,candidate_shared_component,E28 E32 E33 E35,Search result and a local copy with the same hash.,No independent domain-specific HTTP response or UTC acquisition record.
+hazinedosya[.]com,candidate_shared_component,E04 E28 E34 E35,Similarity/search result and a local copy with the same hash.,Similarity and a local filename do not establish a common operator or independent deployment.
+gibtakip[.]net,filename_search_only,E28,Two rows in the same resource-filename search; one unique domain.,Content/hash identity and maliciousness were not verified.
+gibbelgesorgula[.]com,filename_search_only,E28,Resource-filename search result.,Content/hash identity and maliciousness were not verified.
