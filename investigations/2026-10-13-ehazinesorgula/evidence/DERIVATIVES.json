@@ -1,0 +1,1599 @@
+{
+  "review_date": "2026-10-25",
+  "method": "Lossless crop and opaque RGB black masks; no generative reconstruction; originals preserved",
+  "coordinate_convention": "Original-image pixels, half-open [left, top, right, bottom]",
+  "screenshots": [
+    {
+      "id": "E01",
+      "original_file": "evidence/01_urlscan_summary.png",
+      "original_sha256": "1e121cf33c7a80bb8149aa6f869330c223c9d867697d0fd67559bb5e8977d56b",
+      "published_file": "evidence/screenshots/E01_urlscan_summary_redacted.png",
+      "published_sha256": "d3b964d322f82c0accc9b172820743debb6b834a47b4071c8940b4f66c548747",
+      "published_git_blob_sha1": "0de6bd718eb994b2adb0a557bddaf4c9a42f58a9",
+      "published_bytes": 80348,
+      "original_size": [
+        1013,
+        746
+      ],
+      "published_size": [
+        965,
+        362
+      ],
+      "crop_original_pixels": [
+        0,
+        322,
+        965,
+        684
+      ],
+      "opaque_masks_original_pixels": [
+        [
+          243,
+          394,
+          343,
+          416
+        ],
+        [
+          20,
+          438,
+          163,
+          458
+        ],
+        [
+          154,
+          499,
+          474,
+          524
+        ],
+        [
+          20,
+          599,
+          129,
+          626
+        ],
+        [
+          574,
+          355,
+          955,
+          383
+        ]
+      ],
+      "caption_en": "urlscan summary excerpt for ehazinesorgula[.]com: 9 HTTP transactions and an institution-themed page preview. The scan record reports 13 October 2026 11:24:43 UTC; the timestamp is outside this crop.",
+      "edits_en": "Cropped away the site/account header, submitted URLs and live-DNS panel. Opaque masks remove remaining live domain/IP strings and the miniature page header. No text was reconstructed.",
+      "limitations_en": "Historical scan summary, not current availability. Cloudflare edge attribution does not identify the origin or operator; the embedded page preview is small.",
+      "pixels_outside_masks_unchanged": true,
+      "opaque_rgb": true,
+      "source_hash_preserved": true
+    },
+    {
+      "id": "E02",
+      "original_file": "evidence/02_urlscan_http_resources.png",
+      "original_sha256": "2d0045b807c2579227b6c8d25b08840fde42db3295f8ac7b248885b76fb06295",
+      "published_file": "evidence/screenshots/E02_urlscan_http_resources_redacted.png",
+      "published_sha256": "dcabb57e79343660228b8066879129c7244aada434a530e552fd06ed77330ef8",
+      "published_git_blob_sha1": "4afcc5c71804c2ee454834157aff232466e97908",
+      "published_bytes": 91772,
+      "original_size": [
+        982,
+        701
+      ],
+      "published_size": [
+        982,
+        701
+      ],
+      "crop_original_pixels": [
+        0,
+        0,
+        982,
+        701
+      ],
+      "opaque_masks_original_pixels": [
+        [
+          818,
+          55,
+          917,
+          674
+        ],
+        [
+          127,
+          88,
+          449,
+          108
+        ],
+        [
+          138,
+          128,
+          324,
+          166
+        ],
+        [
+          127,
+          216,
+          452,
+          239
+        ],
+        [
+          127,
+          269,
+          448,
+          292
+        ],
+        [
+          127,
+          323,
+          448,
+          345
+        ],
+        [
+          127,
+          352,
+          533,
+          401
+        ],
+        [
+          127,
+          430,
+          460,
+          484
+        ],
+        [
+          127,
+          507,
+          460,
+          546
+        ],
+        [
+          127,
+          584,
+          451,
+          607
+        ],
+        [
+          127,
+          638,
+          451,
+          660
+        ]
+      ],
+      "caption_en": "urlscan HTTP-resource list: successful page/assets requests, a 404 favicon request and a POST to Cloudflare /cdn-cgi/rum returning 204.",
+      "edits_en": "Opaque masks remove raw domain/URL/IP values, secondary resource paths and an unnecessary script identifier. Request methods, status codes and useful resource names remain.",
+      "limitations_en": "The POST shown is telemetry, not a credential submission or evidence of successful exfiltration.",
+      "pixels_outside_masks_unchanged": true,
+      "opaque_rgb": true,
+      "source_hash_preserved": true
+    },
+    {
+      "id": "E04",
+      "original_file": "evidence/04_urlscan_similar_domains.png",
+      "original_sha256": "f4231460ee6e3c71517048401bf4ed429c7ac1ad800c89c667025cc804174643",
+      "published_file": "evidence/screenshots/E04_urlscan_similar_domains_redacted.png",
+      "published_sha256": "24ec99ceb1015b797c1710eec1df541b64de39a78bd369543e54576bfad0cf88",
+      "published_git_blob_sha1": "0775b928647508e358b7ce7e4dfb4c98dee2d3f2",
+      "published_bytes": 67839,
+      "original_size": [
+        1012,
+        757
+      ],
+      "published_size": [
+        980,
+        705
+      ],
+      "crop_original_pixels": [
+        0,
+        52,
+        980,
+        757
+      ],
+      "opaque_masks_original_pixels": [
+        [
+          65,
+          199,
+          480,
+          757
+        ]
+      ],
+      "caption_en": "urlscan reports 29 structurally similar hits. Candidate-domain labels are removed; the experimental-feature warning and part of the results table remain.",
+      "edits_en": "Cropped away the live effective URL and submission header; an opaque mask removes the candidate URL column.",
+      "limitations_en": "Only part of the results list is visible. Structural similarity does not establish shared content, a common operator or maliciousness.",
+      "pixels_outside_masks_unchanged": true,
+      "opaque_rgb": true,
+      "source_hash_preserved": true
+    },
+    {
+      "id": "E05",
+      "original_file": "evidence/05_fake_edevlet_login.png",
+      "original_sha256": "40d9e53aed7198bb07fec5662a5e8aab9acb06fc31063a60598f8c57e9292ff1",
+      "published_file": "evidence/screenshots/E05_fake_edevlet_login_redacted.png",
+      "published_sha256": "2303700ed9f561854f845461781a530e329f36800b77a3e89d029d772b12bcf8",
+      "published_git_blob_sha1": "9145b53b18e52365412250582e7b2fcdc3613495",
+      "published_bytes": 67915,
+      "original_size": [
+        990,
+        832
+      ],
+      "published_size": [
+        785,
+        612
+      ],
+      "crop_original_pixels": [
+        108,
+        120,
+        893,
+        732
+      ],
+      "opaque_masks_original_pixels": [
+        [
+          690,
+          141,
+          864,
+          215
+        ]
+      ],
+      "caption_en": "Fake e-Devlet login appearance with empty Turkish national ID and password fields, originally shown at ehazinesorgula[.]com/giris.",
+      "edits_en": "Cropped away browser chrome, bookmarks, the live address and footer. An opaque mask removes the domain/URL displayed in the upper-right imitation branding.",
+      "limitations_en": "The fields are empty. This image shows impersonation and collection intent, not a form submission or successful transfer. The source address is outside the crop.",
+      "pixels_outside_masks_unchanged": true,
+      "opaque_rgb": true,
+      "source_hash_preserved": true
+    },
+    {
+      "id": "E10",
+      "original_file": "evidence/10_credential_post_request.png",
+      "original_sha256": "6d49b0911b9df6e14cd656dad9b6d8d6e557f5f78293842d69bed1caf3ad1f61",
+      "published_file": "evidence/screenshots/E10_credential_post_request_redacted.png",
+      "published_sha256": "493b0ddf9d279b8bdc41bd131925a49e71097b0d8a8a34da8ae043503409cd28",
+      "published_git_blob_sha1": "2a70d99d94ced4b2253508fa5e68b9a941d6753b",
+      "published_bytes": 18955,
+      "original_size": [
+        1022,
+        835
+      ],
+      "published_size": [
+        1022,
+        138
+      ],
+      "crop_original_pixels": [
+        0,
+        242,
+        1022,
+        380
+      ],
+      "opaque_masks_original_pixels": [
+        [
+          70,
+          266,
+          182,
+          380
+        ],
+        [
+          181,
+          267,
+          632,
+          314
+        ],
+        [
+          181,
+          340,
+          632,
+          380
+        ],
+        [
+          704,
+          314,
+          1022,
+          338
+        ],
+        [
+          669,
+          338,
+          1022,
+          358
+        ],
+        [
+          695,
+          358,
+          1022,
+          380
+        ]
+      ],
+      "caption_en": "DevTools screenshot shows a selected POST to proxy_query.php with request fields password, tc and tcKimlik. All values are removed.",
+      "edits_en": "Cropped away browser/account panels and unrelated traffic. Opaque masks remove the domain column, non-selected request details and every credential/identity value.",
+      "limitations_en": "Screenshot-only evidence of the same-site POST; this POST is absent from E09 HAR. No response body or completed external API transfer is shown, and test-data status is unverified.",
+      "pixels_outside_masks_unchanged": true,
+      "opaque_rgb": true,
+      "source_hash_preserved": true
+    },
+    {
+      "id": "E11",
+      "original_file": "evidence/11_api_settings.png",
+      "original_sha256": "7a1a4c52ebadb9fcfd9e5165b7699edc01ce451deb29e50432c443f4e8c39a61",
+      "published_file": "evidence/screenshots/E11_api_settings_redacted.png",
+      "published_sha256": "e199ecc71bb2e1e13c61c72e2ef475d99c0ac5f24922699cb62fc94b46d2ee6c",
+      "published_git_blob_sha1": "2b12f823aaea1fde0ab0fd431cebc1db355c98e2",
+      "published_bytes": 20845,
+      "original_size": [
+        1023,
+        721
+      ],
+      "published_size": [
+        539,
+        378
+      ],
+      "crop_original_pixels": [
+        484,
+        174,
+        1023,
+        552
+      ],
+      "opaque_masks_original_pixels": [
+        [
+          539,
+          249,
+          1023,
+          271
+        ],
+        [
+          567,
+          270,
+          1023,
+          292
+        ],
+        [
+          552,
+          290,
+          1023,
+          312
+        ],
+        [
+          563,
+          329,
+          1023,
+          352
+        ],
+        [
+          534,
+          350,
+          1023,
+          372
+        ],
+        [
+          576,
+          370,
+          1023,
+          392
+        ],
+        [
+          546,
+          410,
+          1023,
+          432
+        ],
+        [
+          543,
+          430,
+          1023,
+          452
+        ],
+        [
+          611,
+          469,
+          1023,
+          491
+        ],
+        [
+          594,
+          490,
+          1023,
+          512
+        ]
+      ],
+      "caption_en": "Client-visible settings response retains field names, enabled flags and GET methods. Endpoint, secret, identity, contact and payment values are removed.",
+      "edits_en": "Cropped to the response panel, excluding the account header and network table. Opaque masks remove phone, API endpoint/token values, bank/account/IBAN details, amount, case value and address API endpoint/token values.",
+      "limitations_en": "The original configures turkeysystems[.]org/tc-api; this derivative hides endpoint values. Configuration does not prove a successful identity lookup, password transfer or payment.",
+      "pixels_outside_masks_unchanged": true,
+      "opaque_rgb": true,
+      "source_hash_preserved": true
+    },
+    {
+      "id": "E12",
+      "original_file": "evidence/12_burp_turkeysystems_login_response.png",
+      "original_sha256": "57047660682e4eb33fb1db2ee0f207f90e98b7b703e48ca2abb184427f078223",
+      "published_file": "evidence/screenshots/E12_burp_turkeysystems_login_response_redacted.png",
+      "published_sha256": "3393109ad4349c0dbab7bc3fa1b6f59c2e8204bd6458f7cdc5a3d0752d50d9ed",
+      "published_git_blob_sha1": "265a038a2540392db5223edc0bae278ab75908f2",
+      "published_bytes": 32341,
+      "original_size": [
+        673,
+        421
+      ],
+      "published_size": [
+        673,
+        421
+      ],
+      "crop_original_pixels": [
+        0,
+        0,
+        673,
+        421
+      ],
+      "opaque_masks_original_pixels": [],
+      "caption_en": "HTML excerpt shows a POST login form with action giris-yap and a password input named auth_key; no entered key is visible.",
+      "edits_en": "No pixel masks or crop required after review; publication uses a metadata-stripped re-encoded derivative.",
+      "limitations_en": "Host, URL and HTTP status are absent from the original image. The service attribution in its filename is not independently verified by this excerpt.",
+      "pixels_outside_masks_unchanged": true,
+      "opaque_rgb": true,
+      "source_hash_preserved": true
+    },
+    {
+      "id": "E13",
+      "original_file": "evidence/12_proxy_request_code.png",
+      "original_sha256": "3787ecdb79081ce8bfc5ad63ffcad50a4df97b371971096f91f87e4acb5afa2c",
+      "published_file": "evidence/screenshots/E13_proxy_request_code_redacted.png",
+      "published_sha256": "52067bacde516785dac4a77a82d154cd9c84643a8416f77984fc5f40ee984763",
+      "published_git_blob_sha1": "c9e131779b1edf6515b357863bac08e29504b2e3",
+      "published_bytes": 22951,
+      "original_size": [
+        984,
+        432
+      ],
+      "published_size": [
+        453,
+        115
+      ],
+      "crop_original_pixels": [
+        157,
+        65,
+        610,
+        180
+      ],
+      "opaque_masks_original_pixels": [],
+      "caption_en": "Narrow static-code excerpt shows the local ./api/proxy_query.php fetch, POST method and JSON identity/password field names.",
+      "edits_en": "Cropped to the request-code lines. The entire account/settings area containing translucent secret and personal-data residues is outside the crop; no sensitive values were reconstructed.",
+      "limitations_en": "The crop truncates longer code lines and omits fallback/error handling. Static code does not establish server proxy contents or a completed external API transfer.",
+      "pixels_outside_masks_unchanged": true,
+      "opaque_rgb": true,
+      "source_hash_preserved": true
+    },
+    {
+      "id": "E14",
+      "original_file": "evidence/13_burp_turkeysystems_tc_api_response.png",
+      "original_sha256": "574941a1f179f920473e30e35e53feb990cc9a71c13cec95dc7cb274838288eb",
+      "published_file": "evidence/screenshots/E14_burp_turkeysystems_tc_api_response_redacted.png",
+      "published_sha256": "4db6a217236f9783df9aea7b470acf2f8eb04e22781bda76c8092a973aba2ba4",
+      "published_git_blob_sha1": "5245bc905eae4fa8e7e5c8df3c9e61093ada0f50",
+      "published_bytes": 16347,
+      "original_size": [
+        684,
+        586
+      ],
+      "published_size": [
+        349,
+        469
+      ],
+      "crop_original_pixels": [
+        335,
+        70,
+        684,
+        539
+      ],
+      "opaque_masks_original_pixels": [
+        [
+          350,
+          156,
+          684,
+          396
+        ]
+      ],
+      "caption_en": "Response excerpt: HTTP 200 with JSON MessageCode ERROR stating that auth or national ID parameters are missing; server Date is 20 October 2026 14:51:59 GMT.",
+      "edits_en": "Cropped away the request/client panel. An opaque mask removes telemetry URLs and request tracking/timing identifiers while retaining status, basic response headers and the application error.",
+      "limitations_en": "The original is an analyst request to turkeysystems[.]org/tc-api. HTTP 200 is not successful identity lookup; server Date does not establish acquisition time. The host is outside the crop.",
+      "pixels_outside_masks_unchanged": true,
+      "opaque_rgb": true,
+      "source_hash_preserved": true
+    },
+    {
+      "id": "E15",
+      "original_file": "evidence/13_external_api_fallback_code.png",
+      "original_sha256": "1abbc81a2e54b94f37f8e7101950586c6500b6c1e8440a41f874757ed535c0af",
+      "published_file": "evidence/screenshots/E15_external_api_fallback_code_redacted.png",
+      "published_sha256": "51a572924da1139bc69b2bfb8594815da6e7d06a88ab887f23911669c7211480",
+      "published_git_blob_sha1": "24083512364c949c5d20f5bdcb4a3a87e3eff3ef",
+      "published_bytes": 29537,
+      "original_size": [
+        1000,
+        596
+      ],
+      "published_size": [
+        575,
+        187
+      ],
+      "crop_original_pixels": [
+        124,
+        20,
+        699,
+        207
+      ],
+      "opaque_masks_original_pixels": [],
+      "caption_en": "Fallback-code excerpt conditionally adds Authorization and X-API-Key headers and takes the request method from configuration; no key value is present in the retained code.",
+      "edits_en": "Narrow crop excludes the account header and the entire lower settings area containing translucent API secrets, personal identifiers, phone and bank data.",
+      "limitations_en": "The retained crop omits request-body construction, GET URL construction and response handling. Code capability does not prove that this fallback executed.",
+      "pixels_outside_masks_unchanged": true,
+      "opaque_rgb": true,
+      "source_hash_preserved": true
+    },
+    {
+      "id": "E16",
+      "original_file": "evidence/13_http_port_comparison.png",
+      "original_sha256": "126c3b27ab414f93b0b79e02f5705d24d5dbb62a989b1ace48256dd7a5f74933",
+      "published_file": "evidence/screenshots/E16_http_port_comparison_redacted.png",
+      "published_sha256": "1ae8b0f66a61b97f1b9493a609731dae43b8c84f0e69fb20f3e448d3a3f1ccb7",
+      "published_git_blob_sha1": "cf1ed8222b27e656092cab75ade7f32e37d602d8",
+      "published_bytes": 26310,
+      "original_size": [
+        1002,
+        406
+      ],
+      "published_size": [
+        299,
+        256
+      ],
+      "crop_original_pixels": [
+        0,
+        143,
+        299,
+        399
+      ],
+      "opaque_masks_original_pixels": [
+        [
+          70,
+          172,
+          289,
+          193
+        ],
+        [
+          70,
+          301,
+          289,
+          322
+        ],
+        [
+          230,
+          380,
+          299,
+          399
+        ]
+      ],
+      "caption_en": "Port-response comparison excerpt: 80/8080 return 301, 443 redirects to /giris-yap and 8443 returns Cloudflare 521. Original target: turkeysystems[.]org.",
+      "edits_en": "Cropped away commands and the unrelated transparent response background. Opaque masks remove live Location URLs and a residual interface fragment.",
+      "limitations_en": "Historical analyst probes against a Cloudflare edge; these responses do not identify the origin server or prove a working application on 8443.",
+      "pixels_outside_masks_unchanged": true,
+      "opaque_rgb": true,
+      "source_hash_preserved": true
+    },
+    {
+      "id": "E17",
+      "original_file": "evidence/14_external_api_dns_nxdomain.png",
+      "original_sha256": "e419f725093df03a845d3197c174f5519a7096632bf3ac82c600b8b0ee201719",
+      "published_file": "evidence/screenshots/E17_external_api_dns_nxdomain_redacted.png",
+      "published_sha256": "85bc142bc4b37b69e4efc47209e0fa1d6424e4225faa742f8119747c1664d499",
+      "published_git_blob_sha1": "358ff57d913ad7855e248078a1b2bb0036d01b5a",
+      "published_bytes": 6344,
+      "original_size": [
+        1011,
+        363
+      ],
+      "published_size": [
+        490,
+        257
+      ],
+      "crop_original_pixels": [
+        0,
+        94,
+        490,
+        351
+      ],
+      "opaque_masks_original_pixels": [
+        [
+          0,
+          94,
+          241,
+          114
+        ],
+        [
+          385,
+          94,
+          490,
+          114
+        ],
+        [
+          0,
+          114,
+          490,
+          320
+        ],
+        [
+          295,
+          320,
+          490,
+          337
+        ],
+        [
+          0,
+          337,
+          490,
+          351
+        ]
+      ],
+      "caption_en": "Dated DNS output retains NXDOMAIN and the terminal time, 18 October 2026 11:18:43 +03. The queried name is obscured; its exact spelling could not be established from the original pixels.",
+      "edits_en": "Cropped to the result/time region and applied extensive opaque masks to the queried name, DNS transaction details, resolver data and transparent bank/API background. Only the NXDOMAIN result and terminal date strip remain visible.",
+      "limitations_en": "One resolver response at one time; the exact queried name remains uncertain. This derivative cannot establish a target-domain takedown or DNS change. Removed content is not reconstructed.",
+      "pixels_outside_masks_unchanged": true,
+      "opaque_rgb": true,
+      "source_hash_preserved": true
+    },
+    {
+      "id": "E18",
+      "original_file": "evidence/15_external_api_dns.png",
+      "original_sha256": "64b3f13ef060e59c1332b6a60e68c67a7f8dfac3c3111cdb25710af29974b98e",
+      "published_file": "evidence/screenshots/E18_external_api_dns_redacted.png",
+      "published_sha256": "d191e26d1a5f683df93b91cfb7caf9fb83f1efa69fb402e3362aba6cfe9968c8",
+      "published_git_blob_sha1": "b6f1403b5c35ab1d7ec6e510079955b3fc557523",
+      "published_bytes": 3297,
+      "original_size": [
+        289,
+        65
+      ],
+      "published_size": [
+        289,
+        65
+      ],
+      "crop_original_pixels": [
+        0,
+        0,
+        289,
+        65
+      ],
+      "opaque_masks_original_pixels": [
+        [
+          58,
+          0,
+          203,
+          20
+        ],
+        [
+          0,
+          19,
+          127,
+          51
+        ]
+      ],
+      "caption_en": "An undated dig A-record query originally showed turkeysystems[.]org resolving to 104[.]21[.]1[.]166 and 172[.]67[.]129[.]163. Live network values are obscured in the image.",
+      "edits_en": "Opaque masks cover the queried live domain and both live IP address results. No substitute text or network value is inserted into the image.",
+      "limitations_en": "No timestamp or resolver is shown. The caption records only the original observation; present-day DNS state and the origin server are not verified.",
+      "pixels_outside_masks_unchanged": true,
+      "opaque_rgb": true,
+      "source_hash_preserved": true
+    },
+    {
+      "id": "E19",
+      "original_file": "evidence/16_external_api_asn.png",
+      "original_sha256": "a7aa6dee57f1ee224a33c8916e01aed97a9bc46a4176b1e0f6b58d90e1dcd1f3",
+      "published_file": "evidence/screenshots/E19_external_api_asn_redacted.png",
+      "published_sha256": "e154ad648a3b7b21ac16add780683d849f7f9d1c22a16b025e174dec4ce680a1",
+      "published_git_blob_sha1": "706e6fdea3232a8f0d1127bf17b93915d5820f47",
+      "published_bytes": 18668,
+      "original_size": [
+        971,
+        58
+      ],
+      "published_size": [
+        971,
+        58
+      ],
+      "crop_original_pixels": [
+        0,
+        0,
+        971,
+        58
+      ],
+      "opaque_masks_original_pixels": [
+        [
+          99,
+          0,
+          234,
+          17
+        ],
+        [
+          276,
+          0,
+          385,
+          17
+        ],
+        [
+          79,
+          29,
+          201,
+          48
+        ],
+        [
+          231,
+          29,
+          353,
+          48
+        ]
+      ],
+      "caption_en": "Historical Team Cymru output maps 104[.]21[.]1[.]166 to Cloudflare AS13335. The query domain, IP and BGP prefix are obscured; ASN, network organization and allocation date remain visible.",
+      "edits_en": "Opaque masks cover the live lookup-service domain, queried IP, returned IP and BGP network prefix.",
+      "limitations_en": "Cloudflare is shared proxy infrastructure. This does not identify an origin server, operator or attacker location; the allocation date is not an attack date.",
+      "pixels_outside_masks_unchanged": true,
+      "opaque_rgb": true,
+      "source_hash_preserved": true
+    },
+    {
+      "id": "E20",
+      "original_file": "evidence/17_external_api_second_asn.png",
+      "original_sha256": "48fd582454610a05d11a183685064eb11573f2f14d235dc90a6663bd1560b1d3",
+      "published_file": "evidence/screenshots/E20_external_api_second_asn_redacted.png",
+      "published_sha256": "bfe48a1e6e5d6aab854c43d72a7637ba6667dd424dd9d047065846d1d33ca0dc",
+      "published_git_blob_sha1": "345fdda1b4cbc2037b9d2a07e57e5bef4ea023be",
+      "published_bytes": 17141,
+      "original_size": [
+        950,
+        71
+      ],
+      "published_size": [
+        950,
+        49
+      ],
+      "crop_original_pixels": [
+        0,
+        11,
+        950,
+        60
+      ],
+      "opaque_masks_original_pixels": [
+        [
+          105,
+          11,
+          253,
+          29
+        ],
+        [
+          270,
+          11,
+          408,
+          29
+        ],
+        [
+          79,
+          39,
+          208,
+          59
+        ],
+        [
+          232,
+          39,
+          361,
+          59
+        ]
+      ],
+      "caption_en": "Historical Team Cymru output maps 172[.]67[.]129[.]163 to Cloudflare AS13335. The lookup domain, IP and BGP prefix are obscured.",
+      "edits_en": "Cropped out the analyst username/host/path and bottom background. Opaque masks cover the lookup-service domain, queried IP, returned IP and BGP network prefix.",
+      "limitations_en": "The same shared proxy network as E19; this is not dated DNS or origin-server verification. The network allocation date is not campaign onset.",
+      "pixels_outside_masks_unchanged": true,
+      "opaque_rgb": true,
+      "source_hash_preserved": true
+    },
+    {
+      "id": "E21",
+      "original_file": "evidence/18_gobuster_directory_discovery.png",
+      "original_sha256": "191b6863061875a07c48f3ac8b7bc594a64798a7b0fd7a231fa64b052f82f40e",
+      "published_file": "evidence/screenshots/E21_gobuster_directory_discovery_redacted.png",
+      "published_sha256": "c59437677c7e10fcde6ec5d9e41a4039907c08102f6d390688cec8e73ab924b1",
+      "published_git_blob_sha1": "b22f4b30a5cdf02b608af91f4115f57a5290be0f",
+      "published_bytes": 2194,
+      "original_size": [
+        788,
+        760
+      ],
+      "published_size": [
+        111,
+        49
+      ],
+      "crop_original_pixels": [
+        164,
+        175,
+        275,
+        224
+      ],
+      "opaque_masks_original_pixels": [],
+      "caption_en": "A narrow crop preserves three 403 status examples from historical directory discovery against turkeysystems[.]org. The target, path names and transparent background outside this result column are excluded.",
+      "edits_en": "Extensive crop to a small status-code result column removes live target URLs, analyst discovery configuration, path names and the wider transparent code/process background. No text is synthesized.",
+      "limitations_en": "Only example 403 statuses remain in this derivative. The complete reviewed original contains other redirects/statuses described in the audit. A 403 response does not establish that a sensitive file exists; no raw-response or wildcard check is supplied.",
+      "pixels_outside_masks_unchanged": true,
+      "opaque_rgb": true,
+      "source_hash_preserved": true
+    },
+    {
+      "id": "E22",
+      "original_file": "evidence/19_virustotal_historical_whois.png",
+      "original_sha256": "76a957d4b624da90a9e1d49e14796195c83b7747043a99996e894ff36774b89f",
+      "published_file": "evidence/screenshots/E22_virustotal_historical_whois_redacted.png",
+      "published_sha256": "4b504f70466359dcd19398185be5302da55799d6378ee8de521d56766374e704",
+      "published_git_blob_sha1": "6975ac94679002f8a9d48831daa9c836ff06c2f2",
+      "published_bytes": 86114,
+      "original_size": [
+        850,
+        708
+      ],
+      "published_size": [
+        772,
+        696
+      ],
+      "crop_original_pixels": [
+        48,
+        0,
+        820,
+        696
+      ],
+      "opaque_masks_original_pixels": [
+        [
+          171,
+          71,
+          323,
+          91
+        ],
+        [
+          397,
+          92,
+          804,
+          113
+        ],
+        [
+          169,
+          113,
+          585,
+          134
+        ],
+        [
+          322,
+          134,
+          541,
+          155
+        ],
+        [
+          322,
+          155,
+          464,
+          175
+        ],
+        [
+          184,
+          195,
+          405,
+          217
+        ],
+        [
+          242,
+          216,
+          493,
+          240
+        ],
+        [
+          207,
+          326,
+          321,
+          348
+        ],
+        [
+          207,
+          351,
+          321,
+          375
+        ],
+        [
+          169,
+          419,
+          328,
+          441
+        ],
+        [
+          271,
+          441,
+          850,
+          462
+        ],
+        [
+          61,
+          462,
+          424,
+          483
+        ],
+        [
+          167,
+          482,
+          607,
+          505
+        ],
+        [
+          320,
+          504,
+          460,
+          526
+        ],
+        [
+          322,
+          525,
+          454,
+          547
+        ],
+        [
+          182,
+          565,
+          407,
+          588
+        ],
+        [
+          241,
+          586,
+          461,
+          609
+        ],
+        [
+          152,
+          607,
+          286,
+          630
+        ],
+        [
+          220,
+          629,
+          565,
+          652
+        ]
+      ],
+      "caption_en": "Historical WHOIS for turkeysystems[.]org retains creation, update and expiration dates and non-domain registrar context. Live domains, contact details and registration identifiers are obscured.",
+      "edits_en": "Cropped surrounding margins. Opaque masks cover domain names, nameservers, URLs, WHOIS hosts, email/phone contacts, domain-like registrar labels and the registry identifier.",
+      "limitations_en": "Registration history does not establish attacker identity, first misuse or continuity of ownership. The creation date is not phishing onset.",
+      "pixels_outside_masks_unchanged": true,
+      "opaque_rgb": true,
+      "source_hash_preserved": true
+    },
+    {
+      "id": "E23",
+      "original_file": "evidence/20_virustotal_ehazine_dns_whois.png",
+      "original_sha256": "8937aedbce654f8bfc6c912ed3fafb3caca7ae39abaf009d2bd1e6853a3d62d6",
+      "published_file": "evidence/screenshots/E23_virustotal_ehazine_dns_whois_redacted.png",
+      "published_sha256": "7b016a310929d3dda43895945e88b47f187a539c030359aa9d813caa53b82fc7",
+      "published_git_blob_sha1": "640ca0948a80090b402cc05fbf622f25ffce9faa",
+      "published_bytes": 65761,
+      "original_size": [
+        918,
+        536
+      ],
+      "published_size": [
+        885,
+        505
+      ],
+      "crop_original_pixels": [
+        25,
+        18,
+        910,
+        523
+      ],
+      "opaque_masks_original_pixels": [
+        [
+          163,
+          162,
+          504,
+          185
+        ],
+        [
+          375,
+          184,
+          791,
+          207
+        ],
+        [
+          266,
+          205,
+          670,
+          228
+        ],
+        [
+          160,
+          227,
+          605,
+          250
+        ],
+        [
+          214,
+          248,
+          249,
+          270
+        ],
+        [
+          209,
+          268,
+          385,
+          291
+        ],
+        [
+          263,
+          289,
+          425,
+          312
+        ],
+        [
+          278,
+          310,
+          445,
+          333
+        ],
+        [
+          313,
+          331,
+          480,
+          354
+        ],
+        [
+          313,
+          352,
+          451,
+          375
+        ],
+        [
+          178,
+          415,
+          687,
+          438
+        ],
+        [
+          243,
+          436,
+          471,
+          460
+        ],
+        [
+          219,
+          477,
+          656,
+          501
+        ]
+      ],
+      "caption_en": "WHOIS for ehazinesorgula[.]com retains the creation time, 13 October 2026 09:38:56 UTC, registrar and expiry context. Domain, registrant/contact values and registration identifiers are obscured.",
+      "edits_en": "Cropped margins and applied opaque masks to live domains/URLs/nameservers, registrant country/identifiers, email/phone contacts and registry domain identifiers.",
+      "limitations_en": "Although the original filename mentions DNS, this image contains WHOIS only. Creation time does not establish the start of phishing; registrant information does not identify an attacker or location.",
+      "pixels_outside_masks_unchanged": true,
+      "opaque_rgb": true,
+      "source_hash_preserved": true
+    },
+    {
+      "id": "E24",
+      "original_file": "evidence/21_censys_ehazine_certificates.png",
+      "original_sha256": "814c36471fb32306e0091d3a7e40218b037b8d9849dc9ab69522c7505ec6bf75",
+      "published_file": "evidence/screenshots/E24_censys_ehazine_certificates_redacted.png",
+      "published_sha256": "fd23bd6a01b9be800eab3fa3e2660ae77d24473eb07f154824475cbad5ad66ee",
+      "published_git_blob_sha1": "0845d8fbc17db93e660660881eea0ba64e377c17",
+      "published_bytes": 50387,
+      "original_size": [
+        677,
+        633
+      ],
+      "published_size": [
+        677,
+        633
+      ],
+      "crop_original_pixels": [
+        0,
+        0,
+        677,
+        633
+      ],
+      "opaque_masks_original_pixels": [
+        [
+          79,
+          13,
+          230,
+          42
+        ],
+        [
+          124,
+          169,
+          361,
+          192
+        ],
+        [
+          174,
+          236,
+          317,
+          259
+        ],
+        [
+          174,
+          261,
+          339,
+          283
+        ],
+        [
+          79,
+          335,
+          230,
+          363
+        ],
+        [
+          124,
+          492,
+          361,
+          516
+        ],
+        [
+          174,
+          557,
+          317,
+          580
+        ],
+        [
+          174,
+          583,
+          339,
+          606
+        ]
+      ],
+      "caption_en": "Certificate-search results for ehazinesorgula[.]com and its wildcard retain issuer, validity and as-of dates. The second result is labeled precert; live domain values are obscured.",
+      "edits_en": "Opaque masks cover every displayed domain occurrence in titles, SAN names, certificate-name matches and subject fields. Issuer, validity dates and precertificate labeling remain unchanged.",
+      "limitations_en": "Full certificates and fingerprints are absent. These results do not prove concurrent presentation of both certificates or that the site content was trustworthy.",
+      "pixels_outside_masks_unchanged": true,
+      "opaque_rgb": true,
+      "source_hash_preserved": true
+    },
+    {
+      "id": "E25",
+      "original_file": "evidence/22_burp_turkeysystems_payment_endpoints.png",
+      "original_sha256": "98b61d86d73b9816b407d70a7f1353ca48ef810997fab1c48325d2efbacb936a",
+      "published_file": "evidence/screenshots/E25_burp_turkeysystems_payment_endpoints_redacted.png",
+      "published_sha256": "07283eeaf9f14d335e2d99be2454e0217972ff6ff1dbc2189833fb61d191428b",
+      "published_git_blob_sha1": "b0b29933028ccb39e54d27e796465da5c5e734e9",
+      "published_bytes": 83171,
+      "original_size": [
+        974,
+        565
+      ],
+      "published_size": [
+        974,
+        422
+      ],
+      "crop_original_pixels": [
+        0,
+        0,
+        974,
+        422
+      ],
+      "opaque_masks_original_pixels": [
+        [
+          27,
+          0,
+          182,
+          422
+        ],
+        [
+          232,
+          48,
+          421,
+          66
+        ],
+        [
+          388,
+          272,
+          423,
+          383
+        ]
+      ],
+      "caption_en": "Burp history for turkeysystems[.]org shows membership pages, a crypto-payment creation endpoint and repeated payment-status checks. Live hosts and query tails are obscured.",
+      "edits_en": "Cropped out the messaging-profile row and blank lower area. Opaque masks cover all live host values, a telemetry resource identifier and payment-query tails. Methods, endpoint paths and HTTP statuses remain visible.",
+      "limitations_en": "This is analyst interaction with the external service, not proof of a phishing-victim payment. E26 and E27 are details of the same flow rather than independent corroboration.",
+      "pixels_outside_masks_unchanged": true,
+      "opaque_rgb": true,
+      "source_hash_preserved": true
+    },
+    {
+      "id": "E26",
+      "original_file": "evidence/23_burp_crypto_payment_response.png",
+      "original_sha256": "781ea28623c55dc32c754ab4fe759e9fbc9593d16ee59ec9a1f93ceae97e68fd",
+      "published_file": "evidence/screenshots/E26_burp_crypto_payment_response_redacted.png",
+      "published_sha256": "65ab0eb065a860e2b179903511e5e6ba6e217d877aafe1b15964340be2c8a34a",
+      "published_git_blob_sha1": "7fa5a54b3c0895ce9473ac59f08b253dab0ec51a",
+      "published_bytes": 29921,
+      "original_size": [
+        949,
+        481
+      ],
+      "published_size": [
+        949,
+        240
+      ],
+      "crop_original_pixels": [
+        0,
+        180,
+        949,
+        420
+      ],
+      "opaque_masks_original_pixels": [
+        [
+          0,
+          180,
+          639,
+          220
+        ],
+        [
+          142,
+          245,
+          625,
+          263
+        ],
+        [
+          145,
+          261,
+          428,
+          279
+        ]
+      ],
+      "caption_en": "An external-service response dated 22 October 2026 06:41:14 GMT creates a 3.10 USDT/TRC20 membership payment request. Payment token and wallet address are obscured.",
+      "edits_en": "Cropped to the JSON response and date-bearing inspector panel, removing request hosts and most telemetry headers. Opaque masks cover remaining tracking headers, the full payment-token value and wallet address. Field names and non-sensitive payment-state context remain visible.",
+      "limitations_en": "Payment creation is not a completed transfer, wallet-ownership proof or phishing revenue. The expiry field does not state its timezone. The following observed check in E27 remains pending.",
+      "pixels_outside_masks_unchanged": true,
+      "opaque_rgb": true,
+      "source_hash_preserved": true
+    },
+    {
+      "id": "E27",
+      "original_file": "evidence/24_burp_crypto_payment_pending.png",
+      "original_sha256": "11f96d61843aead571865728370848b6f090060a3a8e7ae88517c59efeb46cdf",
+      "published_file": "evidence/screenshots/E27_burp_crypto_payment_pending_redacted.png",
+      "published_sha256": "e4650e30874c48b82316815728813fe5ee4eb90c2a59dabfcab8ad03f15112d5",
+      "published_git_blob_sha1": "0260cd1817153c8e068154377274a4ca56384ac6",
+      "published_bytes": 7519,
+      "original_size": [
+        964,
+        481
+      ],
+      "published_size": [
+        638,
+        130
+      ],
+      "crop_original_pixels": [
+        0,
+        315,
+        638,
+        445
+      ],
+      "opaque_masks_original_pixels": [],
+      "caption_en": "The payment-check JSON reports pending and awaiting payment for 3.10 USDT. It is the continuation of the external-service flow shown in E25 and E26.",
+      "edits_en": "Cropped to the JSON status body, excluding request hosts, query fields, cookies/inspector context and all telemetry URLs/tracking headers. No response text is reconstructed.",
+      "limitations_en": "A pending state is not successful payment or funds transfer. This analyst interaction does not establish a phishing victim, campaign revenue or payment-wallet ownership.",
+      "pixels_outside_masks_unchanged": true,
+      "opaque_rgb": true,
+      "source_hash_preserved": true
+    },
+    {
+      "id": "E28",
+      "original_file": "evidence/25_urlscan_phishing_kit_candidates.png",
+      "original_sha256": "75d10cc55dfa05a679e49d83e7dd8dd61ee5ddbe52970390a453d6e45276a392",
+      "published_file": "evidence/screenshots/E28_urlscan_phishing_kit_candidates_redacted.png",
+      "published_sha256": "bf732df18f58826ed766bf69cba717c274bc08dae3714b66a0ace1dc70781dae",
+      "published_git_blob_sha1": "38b30776546bc3a6c7c9562c9cf5786a1267eb35",
+      "published_bytes": 57326,
+      "original_size": [
+        866,
+        622
+      ],
+      "published_size": [
+        735,
+        534
+      ],
+      "crop_original_pixels": [
+        35,
+        75,
+        770,
+        609
+      ],
+      "opaque_masks_original_pixels": [
+        [
+          84,
+          347,
+          310,
+          379
+        ],
+        [
+          84,
+          385,
+          310,
+          417
+        ],
+        [
+          84,
+          423,
+          310,
+          455
+        ],
+        [
+          84,
+          461,
+          310,
+          493
+        ],
+        [
+          84,
+          499,
+          310,
+          531
+        ],
+        [
+          84,
+          537,
+          310,
+          569
+        ]
+      ],
+      "caption_en": "Filename-search candidates: six scan records cover five distinct domains, including two records for gibtakip[.]net. A filename match alone does not establish identical content or a common operator.",
+      "edits_en": "Cropped the page header and irrelevant outer margin; applied opaque masks to all six live result URLs. The original filename query, search-history limit, result count, relative ages, sizes, and request/IP counts remain visible.",
+      "limitations_en": "The query is limited to recent search history. Relative ages lack a reliable screenshot capture time, and no scan UUID or response hash is visible. The domain mapping is supported by the original private evidence, not readable beneath the masks.",
+      "pixels_outside_masks_unchanged": true,
+      "opaque_rgb": true,
+      "source_hash_preserved": true
+    },
+    {
+      "id": "E29",
+      "original_file": "evidence/26_urlscan_dosyakontrol_shared_js.png",
+      "original_sha256": "a6681d6745f731d247817002317a6e55a84f30ed3a428300736082da4715f97b",
+      "published_file": "evidence/screenshots/E29_urlscan_dosyakontrol_shared_js_redacted.png",
+      "published_sha256": "9f99cfad75b1874ceeb8db2db341a4c75d70546e62634838e7853b9cbf176bfa",
+      "published_git_blob_sha1": "372911cf595bb78e3feb3eaf021934d89fea6551",
+      "published_bytes": 86219,
+      "original_size": [
+        811,
+        598
+      ],
+      "published_size": [
+        727,
+        520
+      ],
+      "crop_original_pixels": [
+        58,
+        0,
+        785,
+        520
+      ],
+      "opaque_masks_original_pixels": [
+        [
+          207,
+          34,
+          442,
+          53
+        ],
+        [
+          207,
+          89,
+          319,
+          109
+        ],
+        [
+          207,
+          163,
+          442,
+          184
+        ],
+        [
+          207,
+          218,
+          442,
+          239
+        ],
+        [
+          207,
+          273,
+          442,
+          294
+        ],
+        [
+          207,
+          325,
+          320,
+          368
+        ],
+        [
+          207,
+          401,
+          320,
+          442
+        ],
+        [
+          207,
+          476,
+          320,
+          519
+        ],
+        [
+          644,
+          11,
+          741,
+          32
+        ],
+        [
+          644,
+          66,
+          741,
+          87
+        ],
+        [
+          644,
+          141,
+          741,
+          162
+        ],
+        [
+          644,
+          195,
+          741,
+          216
+        ],
+        [
+          644,
+          250,
+          741,
+          271
+        ],
+        [
+          644,
+          305,
+          741,
+          326
+        ],
+        [
+          644,
+          381,
+          741,
+          402
+        ],
+        [
+          644,
+          456,
+          741,
+          477
+        ]
+      ],
+      "caption_en": "Resource listing attributed to dosyakontrol[.]net shows api-config.js and e-Devlet-style resource filenames returning GET 200. This image does not display the script body or its hash.",
+      "edits_en": "Cropped outer margins and the final third-party telemetry row, including its long resource identifier. Applied opaque masks to every remaining live hostname/path label and IP address. Original resource filenames, HTTP methods/status codes, sizes, timings, and Cloudflare provider labels remain visible.",
+      "limitations_en": "No scan UUID or acquisition date is shown. The resource listing alone does not independently prove the provenance of saved file E30, an identical script body, a common origin server, or a common operator.",
+      "pixels_outside_masks_unchanged": true,
+      "opaque_rgb": true,
+      "source_hash_preserved": true
+    },
+    {
+      "id": "E31",
+      "original_file": "evidence/28_sha256_shared_phishing_kit.png",
+      "original_sha256": "9bfac3f93080b201074df3c8ed3744641cd65092982643e28dcda9c69f6f0848",
+      "published_file": "evidence/screenshots/E31_sha256_shared_phishing_kit_redacted.png",
+      "published_sha256": "91a6f03f45ed5659ef3aeec1cf1f41ed5e4ce5d822fafaa73cfcf32caacd4b2d",
+      "published_git_blob_sha1": "f2c740b9e874a3421308138e3794dbd5dcc87a58",
+      "published_bytes": 15011,
+      "original_size": [
+        964,
+        176
+      ],
+      "published_size": [
+        964,
+        62
+      ],
+      "crop_original_pixels": [
+        0,
+        114,
+        964,
+        176
+      ],
+      "opaque_masks_original_pixels": [
+        [
+          524,
+          114,
+          964,
+          132
+        ],
+        [
+          0,
+          132,
+          56,
+          148
+        ],
+        [
+          220,
+          132,
+          964,
+          148
+        ],
+        [
+          524,
+          148,
+          964,
+          165
+        ],
+        [
+          0,
+          165,
+          56,
+          176
+        ],
+        [
+          328,
+          165,
+          964,
+          176
+        ]
+      ],
+      "caption_en": "Two-file local SHA-256 comparison: E08 and E30 have the same digest, which was independently recomputed during the audit.",
+      "edits_en": "Cropped prompt, command, local-user/host information, and file-listing metadata. Applied opaque masks to the remaining local-directory prefixes, including wrapped prefixes, and irrelevant background areas after the filenames. Original digest values and source filenames are retained.",
+      "limitations_en": "This establishes equality of two local files, not independent acquisition from two domains. It overlaps the expanded comparisons in E33 and E35.",
+      "pixels_outside_masks_unchanged": true,
+      "opaque_rgb": true,
+      "source_hash_preserved": true
+    },
+    {
+      "id": "E33",
+      "original_file": "evidence/30_sha256_three_domain_match.png",
+      "original_sha256": "3e97a914f62149d27cbe584e5958c4a7724ff7243d67db84315f3d306df4908f",
+      "published_file": "evidence/screenshots/E33_sha256_three_domain_match_redacted.png",
+      "published_sha256": "566c5fe819c390dd39a211685408e68ecca5644f49bf34fce74b8e9dffbff8a3",
+      "published_git_blob_sha1": "47b3ad6daf73b5e93491bb51591ae43a2b3b4e43",
+      "published_bytes": 25932,
+      "original_size": [
+        806,
+        82
+      ],
+      "published_size": [
+        806,
+        51
+      ],
+      "crop_original_pixels": [
+        0,
+        31,
+        806,
+        82
+      ],
+      "opaque_masks_original_pixels": [],
+      "caption_en": "Three-file local SHA-256 comparison: E08, E30, and E32 have the same digest.",
+      "edits_en": "Cropped the prompt and command lines, including the local working directory. The three original digest and filename result lines remain unchanged.",
+      "limitations_en": "This expands E31 to a third local file. Equal hashes do not independently establish acquisition provenance, three-domain deployment, or a common operator.",
+      "pixels_outside_masks_unchanged": true,
+      "opaque_rgb": true,
+      "source_hash_preserved": true
+    },
+    {
+      "id": "E35",
+      "original_file": "evidence/32_sha256_four_domain_match.png",
+      "original_sha256": "d59488d20c28c396ebae113ca561c59fe427574ebd7ace9e850fc1acb96e7ec8",
+      "published_file": "evidence/screenshots/E35_sha256_four_domain_match_redacted.png",
+      "published_sha256": "5846250c39f985def9f8ed408ebb3c40ca54a07250ae5f60358b88cabd85438f",
+      "published_git_blob_sha1": "a07727b11e380f1c336a63686a2a50966cfba288",
+      "published_bytes": 36835,
+      "original_size": [
+        968,
+        120
+      ],
+      "published_size": [
+        968,
+        67
+      ],
+      "crop_original_pixels": [
+        0,
+        53,
+        968,
+        120
+      ],
+      "opaque_masks_original_pixels": [],
+      "caption_en": "Four-file local SHA-256 comparison: E08, E30, E32, and E34 have the same digest. Each file is 18,469 bytes; there is one unique byte content in this group.",
+      "edits_en": "Cropped the local-user/host prompt, working directory, command, and its wrapped continuation. The four original digest and filename result lines remain unchanged.",
+      "limitations_en": "This subsumes the comparisons in E31 and E33. It confirms local byte identity, not independent acquisition from all four attributed domains, full-kit identity, or a common operator.",
+      "pixels_outside_masks_unchanged": true,
+      "opaque_rgb": true,
+      "source_hash_preserved": true
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # CASE002 — Concise evidence audit
 
-**Audit date:** 24 October 2026. Source: `CASE002_evidence.zip`. Review was offline; no new connections to targets were made. The original ZIP and existing project references were left unchanged.
+**Audit date:** 24 October 2026. **Visual publication update:** 25 October 2026. Source: `CASE002_evidence.zip`. Review was offline; no new connections to targets were made. The original ZIP and existing project references were left unchanged.
 
 ## Scope and duplicates
 
@@ -20,7 +20,7 @@
 | E03, E06–E09, E30, E32, E34 | Analytics/page identifiers, local data fields or default address/person templates. Static templates are not verified victim records. |
 | Other PNG files | Raw network addresses; some images contain analyst username/host/directory, browser environment or unnecessary registration/contact details. |
 
-**Decision:** None of the 35 raw files is included in the publication package. Findings are described without copying sensitive values; URL/domain/IP indicators are defanged. Originals and local working copies were retained. A Git exclusion rule was added for the working directory; that directory must not be shared separately.
+**Decision:** Original files remain private. This release includes 27 individually reviewed screenshot derivatives; the eight raw text/HAR files remain excluded. Findings are described without copying sensitive values; URL/domain/IP indicators are defanged. Originals and local working copies were retained. A Git exclusion rule was added for the working directory; that directory must not be shared separately.
 
 ## Technical conclusions
 
@@ -44,4 +44,12 @@ Any follow-up collection should use an isolated analysis environment; copies pre
 
 **Source ZIP:** 2,689,056 bytes; total extracted file size: 3,259,383 bytes. SHA-256: `e1e2ec24a2e255d9c0dbfb2cf40487498057cee561ba5be91692387e768f6f12`.
 
-**Publication package:** This English text/CSV release contains only derived findings. Detailed decisions for all 35 files are in [evidence_index.csv](evidence_index.csv). SHA-256 identifies the bytes received for this audit; it does not by itself authenticate their historical acquisition.
+**Publication package:** This English release contains derived findings and reviewed screenshot copies. Detailed decisions for all 35 files are in [evidence_index.csv](evidence_index.csv). SHA-256 identifies the bytes received for this audit; it does not by itself authenticate their historical acquisition.
+
+## Screenshot publication update — 25 October 2026
+
+- All 27 source PNGs were reviewed again, and each publication copy received a separate visual privacy check. Sources were preserved; their SHA-256 hashes still match the original inventory.
+- Publication copies use lossless crops and opaque black masks where needed. E12 needed no pixel redaction and was re-encoded without metadata. Retained, unmasked pixels are byte-identical to the corresponding original pixels. All outputs are flattened RGB PNGs, with no hidden layers or source metadata.
+- Masks cover secrets, identity/personal/bank/payment data, analyst context, and live network-address strings. Relevant indicators remain available in defanged captions and the IoC tables. Transparent backgrounds were reviewed as part of the image, not only as foreground text.
+- Eight illustrations appear in the main report. All 27 copies are in the [gallery](evidence/INDEX.md); exact transformations and original/publication hashes are in [DERIVATIVES.json](evidence/DERIVATIVES.json). Extensive crops in E17/E21 and code excerpts E13/E15 are explicitly limited in their captions.
+- These edits improve publication safety and presentation. They do not fill collection gaps or change the limits on external transfer, payment success, origin infrastructure or operator attribution.
